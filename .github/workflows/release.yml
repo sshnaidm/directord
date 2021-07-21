@@ -101,8 +101,8 @@ jobs:
       with:
         push: true
         tags: |
-          cloudnull/directord:stable
-          cloudnull/directord:${{ github.event.release.tag_name }}
-          quay.io/cloudnull/directord:stable
-          quay.io/cloudnull/directord:${{ github.event.release.tag_name }}
+          sshnaidm/directord:stable
+          sshnaidm/directord:${{ github.event.release.tag_name }}
+          quay.io/sshnaidm/directord:stable
+          quay.io/sshnaidm/directord:${{ github.event.release.tag_name }}
         file: Containerfile
