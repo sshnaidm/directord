@@ -1,0 +1,7 @@
+---
+# This item lists a limited set of nodes which will run a given set of jobs.
+- targets:
+  - container-client
+  jobs:
+  - CONTAINER_IMAGE: --skip-cache --socket-path /tmp/podman.sock --tlsverify False --pull alpine:3.12
+  - CONTAINER_IMAGE: --skip-cache --socket-path /tmp/podman.sock --tlsverify False --inspect alpine:3.12
